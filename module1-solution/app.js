@@ -25,12 +25,14 @@ function LunchCheckController ($scope) {
   }
 
   function processMessage(numOfItems) {
+    $scope.curColor = 'green';
     if (numOfItems >= 1 && numOfItems <= 3) {
       return "Enjoy!";
     } else if (numOfItems >= 4) {
       return "Too much!";
     }
     else {
+      $scope.curColor = 'red';
       return "Please enter data first";
     }
   }

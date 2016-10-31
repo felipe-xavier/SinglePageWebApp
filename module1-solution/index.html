@@ -18,13 +18,13 @@
          <div class="form-group">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model=lunchList>
+             class="form-control" ng-model=lunchList ng-style="{'border-color': curColor}">
              <div class=warning>*We DO NOT consider spaces and empty strings as an item towards to the count.</div>
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkLunchList();">Check If Too Much</button>
          </div>
-         <div class="form-group message">
+         <div class="form-group message" ng-style="{'color': curColor}">
            <!-- Your message can go here. -->
            {{message}}
          </div>

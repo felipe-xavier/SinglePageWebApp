@@ -21,7 +21,10 @@
     </div>
 
     <!-- found-items should be implemented as a component -->
-    <found-itemss found-items="controller.found" on-remove="controller.removeItem(indexItem)"></found-itemss>
+    <found-itemss found-items="controller.found" on-remove="controller.removeItem(indexItem)">
+      <div class="loader" ng-show="controller.loader"></div>
+      <div class="empty" ng-show="controller.empty">Nothing Found!</div>
+    </found-itemss>
   </div>
 
   

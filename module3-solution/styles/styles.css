@@ -10,8 +10,8 @@ input[type="text"] {
   margin-left: 10px;
 }
 .loader {
-  display: none;
-  margin-left: 5px;
+
+  margin-left: 15px;
   font-size: 10px;
   float: left;
   border-top: 1.1em solid rgba(147, 147, 147, 0.2);
@@ -84,8 +84,16 @@ ul li span{
 #button-list{
   
   margin-bottom: 10px;
+}
 
-  
+#name {
+  width: 260px;
+  overflow: hidden;
+}
+
+#short-name {
+  width: 60px;
+  text-align: center;
 }
 
 #name, #short-name {
@@ -97,4 +105,10 @@ ul li span{
 
 #description {
   margin-top: 5px;
+}
+
+.empty {
+  clear: both;
+  color: red;
+  font-size: 1.2em;
 }

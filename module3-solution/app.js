@@ -8,6 +8,7 @@ angular.module("NarrowItDownApp", [])
 
 function FoundItemsDirective() {
 	var ddo = {
+		transclude: true,
 		templateUrl: "found-items-template.html",
 		scope: {
 			onRemove: '&',
@@ -24,22 +25,24 @@ function NarrowItDownController(MenuSearchService) {
 	var controller = this;
 	controller.searchTerm = "";
 	controller.found = [];
+	controller.loader = false;
+	controller.empty = false;
 	
 	controller.findMatchedMenuItems = function () {
 		console.log("this: ", this);
 		var promise = MenuSearchService.getMatchedMenuItems(controller.searchTerm);
+		controller.loader = true;
 
 		promise.then(function (response) {
 			console.log("response: ",response);
 			controller.found = response;
+			if (controller.found.length === 0) {
+				controller.empty = true;
+			}
+		})
+		.finally(function () {
+			controller.loader = false;
 		});
-		// controller.found = MenuSearchService.getMatchedMenuItems(controller.searchTerm);
-		// controller.found = controller.found.$$state.value;
-		// console.log("found: ", controller.found);
-		// for (var i = 0; i < controller.found.length; i++) {
-		// 	console.log("found[i]", controller.found[i]);
-		// 	console.log("found[i].name", controller.found[i].name);
-		// }
 	};
 
 	controller.removeItem = function (itemIndex) {
@@ -61,6 +64,7 @@ function MenuSearchService($http) {
 	    console.log("foundItems", foundItems);
 	    foundItems = foundItems.menu_items;
 	    var matchedItems = [];
+	    if (searchTerm === "") return matchedItems;
 
 	    for (var i = 0; i < foundItems.length; i++) {
 	    	var description = foundItems[i].description;

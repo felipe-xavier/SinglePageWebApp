@@ -38,6 +38,8 @@ function NarrowItDownController(MenuSearchService) {
 			controller.found = response;
 			if (controller.found.length === 0) {
 				controller.empty = true;
+			} else {
+				controller.empty = false;
 			}
 		})
 		.finally(function () {

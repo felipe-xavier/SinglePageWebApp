@@ -1,0 +1,134 @@
+h1 {
+  margin-bottom: 30px;
+}
+input[type="text"] {
+  width: 200px;
+  float: left;
+}
+.narrow-button {
+  float: left;
+  margin-left: 10px;
+}
+.loader {
+
+  margin-left: 15px;
+  font-size: 10px;
+  float: left;
+  border-top: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-right: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-bottom: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-left: 1.1em solid #676767;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+ul{
+  list-style: none;
+  width: 650px;
+  margin-top: 100px;
+  
+  clear: both;
+  
+}
+
+ul li{
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+  overflow: hidden;
+}
+
+ul li div{
+  padding:0px;
+  margin:10px;
+  clear: both;
+  border:none;
+}
+
+ul li span{
+  
+  padding: 10px;
+  color:#6e7a7f;
+  float:left;
+  
+}
+
+#button-list{
+  
+  margin-bottom: 10px;
+}
+
+#name {
+  width: 260px;
+  overflow: hidden;
+}
+
+#short-name {
+  width: 60px;
+  text-align: center;
+}
+
+#name, #short-name {
+  font-weight: bold;
+  background-color: #6e7a7f;
+  color: white;
+  border:1px solid #ddd;
+}
+
+#description {
+  margin-top: 5px;
+}
+
+.empty {
+  clear: both;
+  color: red;
+  font-size: 1.2em;
+}
+
+body {
+  background-color: #222;
+  color: white;
+  font-family: 'Open Sans Condensed', 'Open Sans', Helvetica, sans-serif;
+}
+
+body div {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  width: 300px;
+  height: 400px;
+
+  font-size: 2.4em;
+}

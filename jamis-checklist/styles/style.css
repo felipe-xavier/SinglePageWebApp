@@ -1,0 +1,36 @@
+.emptyMessage {
+        font-weight: bold;
+        color: red;
+        font-size: 1.4em;
+        margin-bottom: 30px;
+      }
+      .checkedMessage {
+        font-weight: bold;
+        color: green;
+        font-size: 1.4em;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 3.4em;
+
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        margin-bottom: 8px;
+        font-size: 1.4em;
+      }
+      .btn {
+        font-size:1em;
+        width: 150px;
+      }
+      li > span {
+        color: green;
+        margin-right: 6px;
+      }
+      body {
+        background-color: #222;
+        color: white;
+        font-family: 'Open Sans Condensed', 'Open Sans', Helvetica, sans-serif;
+      }

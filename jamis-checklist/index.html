@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <title>Do Not Forget my Head - Jamis Checklist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+<body ng-app="ListCheckOff">
+  <div class="container">
+  <h1>Jamis Checklist</h1>
+
+  <div class="row" ng-controller="ToCheckController as toCheck">
+
+    <!-- To Buy List -->
+    <div class="col-md-6">
+     <h2>To Check:</h2>
+     <ul>
+       <li ng-repeat="item in toCheck.items"> <button class=" btn btn-primary" ng-click="toCheck.doItemChecked($index);"> {{item.name}}</button></li>
+     </ul>
+     <div class="checkedMessage" ng-if="!toCheck.items.length">My Head is Safe!</div>
+    </div>
+
+    <!-- Already Bought List -->
+    <div class="col-md-6" ng-controller="AlreadyCheckedController as checked">
+     <h2>Already Checked:</h2>
+     <ul>
+       <li ng-repeat="item in checked.items"> <span class="glyphicon glyphicon-ok"></span> {{item.name}}</li>
+     </ul>
+     <div class="emptyMessage" ng-if="!checked.items.length">Jamis, check something!</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

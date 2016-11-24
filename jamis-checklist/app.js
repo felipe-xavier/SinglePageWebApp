@@ -38,6 +38,7 @@
 			{ name: "Snack"},
 			{ name: "Desodorante"},
 			{ name: "Locker"},
+			{ name: "Toalha"},
 			{ name: "Liga de Cabelo*"}
 		]
 

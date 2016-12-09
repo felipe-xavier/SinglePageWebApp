@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+.background, .background .pane, .background .item, .background .item-complex .item-content{
+    background-color: #222;
+    color: white;
+    font-family: 'Open Sans Condensed', 'Open Sans', Helvetica, sans-serif;
+}
+
+
+.container .icountdown {
+  font-size: 3.4em;
+}
+
+.home .scroll-content {
+  display: table !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: -50px;
+  text-align: center;
+}
+.home .scroll {
+  display: table-cell;
+  vertical-align: middle;
+}

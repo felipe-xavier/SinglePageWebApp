@@ -2,22 +2,22 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('countdown').then(function(cache) {
      return cache.addAll([
-       '/',
-       '/index.html',
-       '/templates/home.html',
-       '/templates/login.html',
-       '/templates/sidebar.html',
-       '/css/style.css',
+       '/SinglePageWebApp/jamis-countdown/www/',
+       '/SinglePageWebApp/jamis-countdown/www/index.html',
+       '/SinglePageWebApp/jamis-countdown/www/templates/home.html',
+       '/SinglePageWebApp/jamis-countdown/www/templates/login.html',
+       '/SinglePageWebApp/jamis-countdown/www/templates/sidebar.html',
+       '/SinglePageWebApp/jamis-countdown/www/css/style.css',
 
        'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300',
-       'lib/ionic/css/ionic.css',
-       'lib/ionic/js/ionic.bundle.js',
+       '/SinglePageWebApp/jamis-countdown/wwwlib/ionic/css/ionic.css',
+       '/SinglePageWebApp/jamis-countdown/wwwlib/ionic/js/ionic.bundle.js',
        //'cordova.js',
-       '/css/style.css',
+       '/SinglePageWebApp/jamis-countdown/www/css/style.css',
 
-       '/js/app.js',
-       '/js/directives.js',
-       '/js/controllers.js'
+       '/SinglePageWebApp/jamis-countdown/www/js/app.js',
+       '/SinglePageWebApp/jamis-countdown/www/js/directives.js',
+       '/SinglePageWebApp/jamis-countdown/www/js/controllers.js'
      ]);
    })
  );

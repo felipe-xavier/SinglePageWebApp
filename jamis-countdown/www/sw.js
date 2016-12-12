@@ -11,7 +11,7 @@ self.addEventListener('install', function(e) {
        'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300',
        'lib/ionic/css/ionic.css',
        'lib/ionic/js/ionic.bundle.js',
-       'cordova.js',
+
        '/css/style.css',
 
        '/js/app.js',

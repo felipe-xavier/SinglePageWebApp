@@ -10,8 +10,8 @@ self.addEventListener('install', function(e) {
        '/SinglePageWebApp/jamis-countdown/www/css/style.css',
 
        'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300',
-       '/SinglePageWebApp/jamis-countdown/wwwlib/ionic/css/ionic.css',
-       '/SinglePageWebApp/jamis-countdown/wwwlib/ionic/js/ionic.bundle.js',
+       '/SinglePageWebApp/jamis-countdown/www/lib/ionic/css/ionic.css',
+       '/SinglePageWebApp/jamis-countdown/www/lib/ionic/js/ionic.bundle.js',
        //'cordova.js',
        '/SinglePageWebApp/jamis-countdown/www/css/style.css',
 

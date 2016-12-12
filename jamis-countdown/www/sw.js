@@ -5,12 +5,13 @@ self.addEventListener('install', function(e) {
        '/',
        '/index.html',
        '/templates/home.html',
+       '/templates/login.html',
        '/templates/sidebar.html',
        '/css/style.css',
 
        'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300',
        'lib/ionic/css/ionic.css',
-       //'lib/ionic/js/ionic.bundle.js',
+       'lib/ionic/js/ionic.bundle.js',
        //'cordova.js',
        '/css/style.css',
 
